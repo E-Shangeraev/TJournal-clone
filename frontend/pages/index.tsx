@@ -1,5 +1,8 @@
+import React from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
+import Post from '../components/Post'
+import LeftMenu from '../components/LeftMenu'
 
 export default function Home() {
   return (
@@ -15,6 +18,13 @@ export default function Home() {
         />
       </Head>
       <Header />
+      <div className="wrapper">
+        <LeftMenu />
+        <div className="content">
+          <Post />
+        </div>
+        <aside className="rightSide"></aside>
+      </div>
     </div>
   )
 }
