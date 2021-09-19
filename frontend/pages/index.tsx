@@ -19,8 +19,12 @@ export default function Home() {
       </Head>
       <Header />
       <div className="wrapper">
-        <LeftMenu />
+        <div className="leftSide">
+          <LeftMenu />
+        </div>
         <div className="content">
+          <Post />
+          <Post />
           <Post />
         </div>
         <aside className="rightSide"></aside>

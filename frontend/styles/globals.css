@@ -16,8 +16,13 @@ a {
   outline: none;
   font-family: Roboto 'Helvetica Neue' Helvetica sans-serif;
 }
+.wrapper {
+  display: flex;
+  padding: 0 30px;
+  padding-top: 80px;
+}
 .content {
-  max-width: 1020px;
+  max-width: 640px;
   width: 100%;
   margin: 0 auto;
 }
