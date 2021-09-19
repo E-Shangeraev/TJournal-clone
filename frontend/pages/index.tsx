@@ -5,7 +5,7 @@ import Post from '../components/Post'
 
 export default function Home() {
   return (
-    <MainLayout>
+    <MainLayout hideComments>
       <Post />
       <Post />
       <Post />

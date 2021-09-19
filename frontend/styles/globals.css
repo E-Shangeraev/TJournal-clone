@@ -26,3 +26,6 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+.content--full {
+  max-width: 1000px;
+}
