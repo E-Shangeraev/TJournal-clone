@@ -1,7 +1,10 @@
 import { FC } from 'react'
 import Image from 'next/image'
-import Paper from '@material-ui/core/Paper'
-import { Typography } from '@material-ui/core'
+import { Paper, Typography, IconButton } from '@material-ui/core'
+import CommentsIcon from '@material-ui/icons/ChatBubbleOutlineOutlined'
+import RepostIcon from '@material-ui/icons/RepeatOutlined'
+import FavoriteIcon from '@material-ui/icons/BookmarkBorderOutlined'
+import ShareIcon from '@material-ui/icons/ShareOutlined'
 
 import styles from './Post.module.scss'
 
@@ -23,6 +26,28 @@ const Post: FC = () => {
         width={700}
         height={365}
       />
+      <ul className={styles.actions}>
+        <li>
+          <IconButton>
+            <CommentsIcon />
+          </IconButton>
+        </li>
+        <li>
+          <IconButton>
+            <RepostIcon />
+          </IconButton>
+        </li>
+        <li>
+          <IconButton>
+            <FavoriteIcon />
+          </IconButton>
+        </li>
+        <li>
+          <IconButton>
+            <ShareIcon />
+          </IconButton>
+        </li>
+      </ul>
     </Paper>
   )
 }

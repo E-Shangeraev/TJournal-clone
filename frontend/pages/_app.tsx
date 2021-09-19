@@ -3,7 +3,7 @@ import { MuiThemeProvider, CssBaseline } from '@material-ui/core'
 import Head from 'next/head'
 import Header from '../components/Header'
 
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import 'macro-css'
 
 import { theme } from '../theme'
