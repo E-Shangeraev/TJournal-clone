@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Post from '../components/Post'
 import LeftMenu from '../components/LeftMenu'
+import SideComments from '../components/SideComments'
 
 export default function Home() {
   return (
@@ -27,7 +28,9 @@ export default function Home() {
           <Post />
           <Post />
         </div>
-        <aside className="rightSide"></aside>
+        <aside className="rightSide">
+          <SideComments />
+        </aside>
       </div>
     </div>
   )
