@@ -25,7 +25,15 @@ export default function Settings() {
             required
           />
           <TextField
+            className="mb-20"
             label="Эл. почта"
+            size="small"
+            variant="outlined"
+            fullWidth
+            required
+          />
+          <TextField
+            label="Пароль"
             size="small"
             variant="outlined"
             fullWidth
