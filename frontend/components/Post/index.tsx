@@ -1,10 +1,8 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
-import { Paper, Typography, IconButton } from '@material-ui/core'
-import CommentsIcon from '@material-ui/icons/ChatBubbleOutlineOutlined'
-import RepostIcon from '@material-ui/icons/RepeatOutlined'
-import FavoriteIcon from '@material-ui/icons/BookmarkBorderOutlined'
-import ShareIcon from '@material-ui/icons/ShareOutlined'
+import { Paper, Typography } from '@material-ui/core'
+import PostActions from '../PostActions'
 
 import styles from './Post.module.scss'
 
@@ -15,8 +13,12 @@ const Post: FC = () => {
         variant="h5"
         className={styles.title}
         classes={{ root: styles.paper }}>
-        МВД признало «пожизненно нежелательным» пребывание комика Идрака
-        Мирзализаде в России. Он обязан покинуть страну
+        <Link href="/news/test-123">
+          <a>
+            МВД признало «пожизненно нежелательным» пребывание комика Идрака
+            Мирзализаде в России. Он обязан покинуть страну
+          </a>
+        </Link>
       </Typography>
       <Typography className="mt-10 mb-15">
         Ведомство считает, что комик будет «угрожать общественному порядку».
@@ -26,28 +28,7 @@ const Post: FC = () => {
         width={700}
         height={365}
       />
-      <ul className={styles.actions}>
-        <li>
-          <IconButton>
-            <CommentsIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <RepostIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <FavoriteIcon />
-          </IconButton>
-        </li>
-        <li>
-          <IconButton>
-            <ShareIcon />
-          </IconButton>
-        </li>
-      </ul>
+      <PostActions />
     </Paper>
   )
 }
